@@ -1,10 +1,411 @@
-<!--<!DOCTYPE html>-->
-<!DOCTYPE definition [<!ENTITY amp "&#38;">]>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8" />
     <title>P9 Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        @page {
+          size: A4 landscape;
+          margin: 0.25in;
+        }
+        body {
+          font-family: "Nimbus Sans L", sans-serif;
+          margin: 0;
+        }
+
+        .container {
+          padding-right: 50px;
+          padding-left: 50px;
+          margin-right: auto;
+          margin-left: auto;
+          background-color: #fff;
+          width: 100%;
+        }
+        .container > p {
+          text-align: center;
+        }
+        .list {
+          display: inline-block;
+          list-style-type: none;
+          padding: 0;
+          margin-right: 75px;
+          vertical-align: top;
+        }
+
+        h1 {
+          text-align: center;
+          font-size: large;
+        }
+
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 20px;
+          font-size:7pt;
+        }
+
+        th,
+        td {
+          border: 1px solid #101010;
+          text-align: left;
+          font-weight: lighter;
+          background-color: #fff;
+          padding: 1px 3px;
+          overflow-wrap: break-word;
+        }
+        th {
+          position: relative;
+          vertical-align: text-top;
+          min-height: 3.5em;
+        }
+
+        .th-subtext {
+          padding-top: 10px;
+        }
+
+       .footer {
+          text-align: left;
+          margin-top: 10px;
+          font-size: 0.9em;
+        }
+
+        @media print {
+          body {
+            background: none;
+            color: black;
+          }
+
+          .no-print {
+            display: none;
+          }
+        }
+    </style>
 </head>
 <body>
+<div class="container">
+    <h1>KENYA REVENUE AUTHORITY</h1>
+    <p>INCOME TAX DEPARTMENT</p>
+    <p>INCOME TAX DEDUCTION CARD YEAR 2019</p>
+    <ul class="list">
+        <li>Employer's Name: ACME Group Ltd</li>
+        <li>Employee's Main Name: Muli</li>
+        <li>Employee's Other Names: Carol</li>
+    </ul>
+    <ul class="list">
+        <li>Employer's P.I.N.: P05163355A</li>
+        <li>Employee's P.I.N.: A004010560Y</li>
+    </ul>
+    <table>
+        <thead>
+        <tr>
+            <th>Month</th>
+            <th>
+                Basic Salary
+                <p class="th-subtext">Kshs.</p>
+            </th>
+            <th>
+                Benefits Non Cash
+                <p class="th-subtext">Kshs.</p>
+            </th>
+            <th>
+                Value of Quarters
+                <p class="th-subtext">Kshs.</p>
+            </th>
+            <th>
+                Total Gross Pay
+                <p class="th-subtext">Kshs.</p>
+            </th>
+            <th colspan="3">
+                Defined Contribution Retirement Scheme
+                <p class="th-subtext">Kshs.</p>
+            </th>
+            <th>
+                Owner Occupied Interest
+                <p class="th-subtext">Kshs.</p>
+            </th>
+            <th>Retirement Contribution &amp; Owner Occupied Interest</th>
+            <th>
+                Chargeable Pay
+                <p class="th-subtext">Kshs.</p>
+            </th>
+            <th>
+                Tax Charged
+                <p class="th-subtext">Kshs.</p>
+            </th>
+            <th>
+                Personal Relief
+                <p class="th-subtext">Kshs.</p>
+            </th>
+            <th>
+                Insurance Relief
+                <p class="th-subtext">Kshs.</p>
+            </th>
+            <th>
+                P.A.Y.E Tax (J-K)<br />
+                <p class="th-subtext">Kshs.</p>
+            </th>
+        </tr>
+        <tr>
+            <th rowspan="2"></th>
+            <th rowspan="2">A</th>
+            <th rowspan="2">B</th>
+            <th rowspan="2">C</th>
+            <th rowspan="2">D</th>
+            <th colspan="3">E</th>
+            <th rowspan="2">
+                F
+                <p class="th-subtext">Amount of Interest</p>
+            </th>
+            <th rowspan="2">
+                G
+                <p class="th-subtext">The lowest of E added to F</p>
+            </th>
+            <th rowspan="2">H</th>
+            <th rowspan="2">J</th>
+            <th colspan="2">K</th>
+            <th rowspan="2">L</th>
+        </tr>
+        <tr>
+            <th>E1 30% of A</th>
+            <th>E2 Actual</th>
+            <th>E3 Fixed</th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
 
+        <tbody>
+        <tr>
+            <td>JANUARY</td>
+            <td>160,000.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>160,000.00</td>
+            <td>48,000.00</td>
+            <td>200.00</td>
+            <td>20,000.00</td>
+            <td>0.00</td>
+            <td>200.00</td>
+            <td>159,800.00</td>
+            <td>42,004.00</td>
+            <td>1,408.00</td>
+            <td>0.00</td>
+            <td>40,596.00</td>
+        </tr>
+        <tr>
+            <td>FEBRUARY</td>
+            <td>160,000.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>160,000.00</td>
+            <td>48,000.00</td>
+            <td>200.00</td>
+            <td>20,000.00</td>
+            <td>0.00</td>
+            <td>200.00</td>
+            <td>159,800.00</td>
+            <td>42,004.00</td>
+            <td>1,408.00</td>
+            <td>0.00</td>
+            <td>40,596.00</td>
+        </tr>
+        <tr>
+            <td>MARCH</td>
+            <td>160,000.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>160,000.00</td>
+            <td>48,000.00</td>
+            <td>200.00</td>
+            <td>20,000.00</td>
+            <td>0.00</td>
+            <td>200.00</td>
+            <td>159,800.00</td>
+            <td>42,004.00</td>
+            <td>1,408.00</td>
+            <td>0.00</td>
+            <td>40,596.00</td>
+        </tr>
+        <tr>
+            <td>APRIL</td>
+            <td>160,000.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>160,000.00</td>
+            <td>48,000.00</td>
+            <td>200.00</td>
+            <td>20,000..00</td>
+            <td>0.00</td>
+            <td>200.00</td>
+            <td>159,800.00</td>
+            <td>42,004.00</td>
+            <td>1,408.00</td>
+            <td>0.00</td>
+            <td>40,596.00</td>
+        </tr>
+        <tr>
+            <td>MAY</td>
+            <td>160,000.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>160,000.00</td>
+            <td>48,000.00</td>
+            <td>200.00</td>
+            <td>20,000.00</td>
+            <td>0.00</td>
+            <td>200.00</td>
+            <td>159,800.00</td>
+            <td>42,004.00</td>
+            <td>1,408.00</td>
+            <td>0.00</td>
+            <td>40,596.00</td>
+        </tr>
+        <tr>
+            <td>JUNE</td>
+            <td>160,000.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>160,000.00</td>
+            <td>48,000.00</td>
+            <td>200.00</td>
+            <td>20,000..00</td>
+            <td>0.00</td>
+            <td>200.00</td>
+            <td>159,800.00</td>
+            <td>42,004.00</td>
+            <td>1,408.00</td>
+            <td>0.00</td>
+            <td>40,596.00</td>
+        </tr>
+        <tr>
+            <td>JULY</td>
+            <td>160,000.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>160,000.00</td>
+            <td>48,000.00</td>
+            <td>200.00</td>
+            <td>20,000.00</td>
+            <td>0.00</td>
+            <td>200.00</td>
+            <td>159,800.00</td>
+            <td>42,004.00</td>
+            <td>1,408.00</td>
+            <td>0.00</td>
+            <td>40,596.00</td>
+        </tr>
+        <tr>
+            <td>AUGUST</td>
+            <td>160,000.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>160,000.00</td>
+            <td>48,000.00</td>
+            <td>200.00</td>
+            <td>20,000.00</td>
+            <td>0.00</td>
+            <td>200.00</td>
+            <td>159,800.00</td>
+            <td>42,004.00</td>
+            <td>1,408.00</td>
+            <td>0.00</td>
+            <td>40,596.00</td>
+        </tr>
+        <tr>
+            <td>SEPTEMBER</td>
+            <td>160,000.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>160,000.00</td>
+            <td>48,000.00</td>
+            <td>200.00</td>
+            <td>20,000.00</td>
+            <td>0.00</td>
+            <td>200.00</td>
+            <td>159,800.00</td>
+            <td>42,004.00</td>
+            <td>1,408.00</td>
+            <td>0.00</td>
+            <td>40,596.00</td>
+        </tr>
+        <tr>
+            <td>OCTOBER</td>
+            <td>160,000.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>160,000.00</td>
+            <td>48,000.00</td>
+            <td>200.00</td>
+            <td>20,000.00</td>
+            <td>0.00</td>
+            <td>200.00</td>
+            <td>159,800.00</td>
+            <td>42,004.00</td>
+            <td>1,408.00</td>
+            <td>0.00</td>
+            <td>40,596.00</td>
+        </tr>
+        <tr>
+            <td>NOVEMBER</td>
+            <td>160,000.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>160,000.00</td>
+            <td>48,000.00</td>
+            <td>200.00</td>
+            <td>20,000.00</td>
+            <td>0.00</td>
+            <td>200.00</td>
+            <td>159,800.00</td>
+            <td>42,004.00</td>
+            <td>1,408.00</td>
+            <td>0.00</td>
+            <td>40,596.00</td>
+        </tr>
+        <tr>
+            <td>DECEMBER</td>
+            <td>160,000.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>160,000.00</td>
+            <td>48,000.00</td>
+            <td>200.00</td>
+            <td>20,000.00</td>
+            <td>0.00</td>
+            <td>200.00</td>
+            <td>159,800.00</td>
+            <td>42,004.00</td>
+            <td>1,408.00</td>
+            <td>0.00</td>
+            <td>40,596.00</td>
+        </tr>
+        <tr>
+            <td>TOTAL</td>
+            <td>1,440,000.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1,440,000.00</td>
+            <td>432,000.00</td>
+            <td>1800.00</td>
+            <td>180,000.00</td>
+            <td>0.00</td>
+            <td>1800.00</td>
+            <td>1,438,800.00</td>
+            <td>378,036.00</td>
+            <td>12,672.00</td>
+            <td>0.00</td>
+            <td>363,364.00</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <p style="font-size: 12px">TOTAL TAX (COL L) Kshs. 363,364.00</p>
+
+    <div class="footer">
+        <p>To be completed by Employer at end of year</p>
+        <p>TOTAL CHARGEABLE PAY (COL H) Kshs. 1,438,200.00</p>
+    </div>
+</div>
 </body>
 </html>
