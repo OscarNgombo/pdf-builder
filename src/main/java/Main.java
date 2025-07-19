@@ -13,13 +13,13 @@ public class Main {
     public static void main(String[] args) {
 
         Logger.getLogger("org.apache.pdfbox").setLevel(Level.SEVERE);
-        File outputDir = new File("out");
+        File outputDir = new File("src/out");
         if (!outputDir.exists()) {
             outputDir.mkdirs();
         }
 
-        convertHtmlToPdf("p-nine-report.html", "out/Sample BNG P9 Report.pdf");
-        convertHtmlToPdf("account-statements.html", "out/Sample Account Statements Report.pdf");
+        convertHtmlToPdf("p-nine-report.html", "src/out/Sample BNG P9 Report.pdf");
+        convertHtmlToPdf("account-statements.html", "src/out/Sample Account Statements Report.pdf");
     }
 
     /**
@@ -50,9 +50,9 @@ public class Main {
             System.out.println("Successfully created PDF: " + outputPdfPath);
 
         } catch (Exception e) {
-            // IMPROVED ERROR HANDLING: Print the full stack trace for better debugging.
             System.err.println("Error during PDF conversion for " + htmlResourceName + ":");
             e.printStackTrace();
         }
     }
+
 }
